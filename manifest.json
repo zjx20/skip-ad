@@ -1,12 +1,13 @@
 {
   "manifest_version": 2,
   "name": "Skip Ad",
-  "description": "Automatically closes YouTube ads for you.",
-  "version": "1.0",
+  "description": "Automatically closes YouTube ads.",
+  "version": "1.1",
   "icons": { "128": "icon128.png" },
   "content_scripts": [
     {
       "matches": ["https://*.youtube.com/*"],
+      "css": ["youtube.css"],
       "js": ["youtube.js"]
     }
   ]
