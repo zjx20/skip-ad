@@ -9,5 +9,8 @@ setInterval(() => {
     if (!video.paused) {
       video.currentTime = video.duration;
     }
+    for (const button of document.getElementsByClassName("ytp-large-play-button")) {
+      button.click(); // press the center play button
+    }
   }
 }, 300);
