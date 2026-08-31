@@ -4,11 +4,14 @@
   "description": "Automatically closes YouTube ads.",
   "version": "1.1",
   "icons": { "128": "icon128.png" },
+  "minimum_chrome_version": "111",
   "content_scripts": [
     {
       "matches": ["https://*.youtube.com/*"],
       "css": ["youtube.css"],
-      "js": ["youtube.js"]
+      "js": ["youtube.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
     }
   ],
   "background": {
