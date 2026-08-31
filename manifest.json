@@ -13,16 +13,5 @@
       "run_at": "document_start",
       "world": "MAIN"
     }
-  ],
-  "background": {
-    "service_worker": "service-worker.js",
-    "type": "module"
-  },
-  "host_permissions": [
-    "*://.youtube.com/",
-    "*://*.youtube.com/"
-  ],
-  "permissions": [
-    "cookies"
   ]
 }
